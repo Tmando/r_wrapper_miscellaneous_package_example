@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  r_example:
+    build: .
+    tty: true
+    ports:
+      - "9050:9050"
+    volumes:
+      - .:/app/
+    command: Rscript app.R
+    network_mode: bridge
