@@ -5,6 +5,7 @@ services:
     tty: true
     ports:
       - "9050:9050"
+      - "8097:8097"
     volumes:
       - .:/app/
     command: Rscript app.R
